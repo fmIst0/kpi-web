@@ -1,0 +1,43 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background: silver;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-container {
+    display: flex;
+    width: 100%;
+    height: min-content;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.messages-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    width: 50%;
+    height: 500px;
+    flex: 1;
+}
+
+#right-part {
+    width: 100%;
+    text-align: end;
+    padding: 5px 10px;
+    background: lightblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#left-part {
+    width: 100%;
+    text-align: start;
+    padding: 5px 10px;
+    background: lightblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
