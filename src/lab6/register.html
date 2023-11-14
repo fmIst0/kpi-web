@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Registration</title>
+</head>
+<body>
+<header>
+    <img src="logo.jpg" alt="Лого" width="40" height="40">
+</header>
+
+<main>
+    <section class="register-form">
+        <h2>Registration</h2>
+        <form class="registration-form" id="registration-form">
+        <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+            <span id="password-error" class="error-message"></span>
+
+            <label for="last-name">Прізвище:</label>
+            <input type="text" id="last-name" name="last-name" required>
+            <span id="last-name-error" class="error-message"></span><br>
+
+            <label for="first-name">Ім'я:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <span id="first-name-error" class="error-message"></span><br>
+
+            <label for="middle-name">По-батькові:</label>
+            <input type="text" id="middle-name" name="middle-name" required>
+            <span id="middle-name-error" class="error-message"></span><br>
+
+            <label for="dob">Дата народження:</label>
+            <input type="date" id="dob" name="dob" required>
+            <span id="dob-error" class="error-message"></span><br>
+
+            <label for="gender">Стать:</label>
+            <input type="radio" id="gender" name="gender" value="Чоловік">Чоловік
+            <input type="radio" name="gender" value="Жінка">Жінка
+            <input type="radio" name="gender" value="Не вказано">Не вказано
+            <span id="gender-error" class="error-message"></span><br><br>
+
+            <label for="phone">Номер телефону:</label>
+            <input type="text" id="phone" name="phone" placeholder="+38(0__)-___-__-__">
+            <span id="phone-error" class="error-message"></span><br>
+
+            <label for="group">Група:</label>
+            <select id="group" name="group" required>
+                <option value="">Оберіть групу</option>
+                <option value="Футбол">Футбол</option>
+                <option value="Баскетбол">Баскетбол</option>
+                <option value="Бокс">Бокс</option>
+            </select>
+            <span id="group-error" class="error-message"></span><br>
+
+            <label for="file">Завантажити файл:</label>
+            <input type="file" id="file" name="file" required>
+            <span id="file-error" class="error-message"></span><br>
+
+            <button type="submit">Зареєструватися</button>
+        </form>
+    </section>
+
+    <table id="user-table">
+        <thead>
+        <tr>
+            <th>Email</th>
+            <th>Прізвище</th>
+            <th>Ім'я</th>
+            <th>По-батькові</th>
+            <th>Дата народження</th>
+            <th>Стать</th>
+            <th>Номер телефону</th>
+            <th>Група</th>
+            <th>Файл</th>
+            <th>Дії</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div class="actions">
+        <button id="delete-selected">Видалити обрані</button>
+        <button id="duplicate-selected">Дублювати обрані</button>
+    </div>
+</main>
+
+<footer>
+    <div class="lds-ripple"><div></div><div></div></div>
+    <div class="contact-icons">
+        <a href="tel:+123456789"><i class="fas fa-phone"></i></a>
+        <a href="mailto:info@example.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://t.me/fmIst0"><i class="fab fa-telegram"></i></a>
+        <a href="https://wa.me/123456789"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</footer>
+
+<script src="js.js"></script>
+</body>
+</html>
